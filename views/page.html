@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Real-Time Web Chat</title>
+    <script src="/chat.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="content"></div>
+    <label class="label">
+      <span class="icon">
+        <svg
+          class="w-6 h-6 text-gray-800 dark:text-white"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="25"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="currentColor"
+            stroke-width="1.25"
+            d="M7 17v1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-4a3 3 0 0 0-3 3Zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+          ></path>
+        </svg>
+      </span>
+      <input
+        id="name"
+        type="text"
+        class="input input-alt"
+        placeholder="Your name here"
+        autocomplete="off"
+      />
+    </label>
+    <br/>
+    <div id="controls">
+      <div class="form-control">
+        <input id="field" class="input input-alt" placeholder="Type something intelligent" required="" type="text">
+        <span class="input-border input-border-alt"></span>
+      </div>
+      <button id="send"><span class="text">Send</span></button>
+    </div>
+    <br/><br/><br/><br/><br/><br/><br/>
+    <div class="form-control">
+      <input id="key" class="input input-alt" placeholder="Secret Room Key Here" required="" type="text">
+      <span class="input-border input-border-alt"></span>
+    </div>
+  </body>
+</html>
