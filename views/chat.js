@@ -1,7 +1,7 @@
 window.onload = function() {
 
     var messages = [];
-    var socket = io.connect('http://localhost:3700');
+    var socket = io.connect('https://33t0l0lc-3700.use.devtunnels.ms/');
     var field = document.getElementById("field");
     var sendButton = document.getElementById("send");
     var content = document.getElementById("content");
